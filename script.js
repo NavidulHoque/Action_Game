@@ -176,11 +176,20 @@ function animationEngine() {
     else if(score >= 35 && score < 40){
       obstacle.style.left = (parseInt(window.getComputedStyle(obstacle).getPropertyValue("left")) - 17) + 'px';
     }
-    else if(score >= 40 && score <= 50){
+    else if(score >= 40 && score < 50){
       obstacle.style.left = (parseInt(window.getComputedStyle(obstacle).getPropertyValue("left")) - 20) + 'px';
     }
-    else if(score > 50){
+    else if(score >= 50){
       obstacle.style.left = (parseInt(window.getComputedStyle(obstacle).getPropertyValue("left")) - 25) + 'px';
+    }
+    else if (score >= 60 && score < 70) {
+      obstacle.style.left = (parseInt(window.getComputedStyle(obstacle).getPropertyValue("left")) - 30) + 'px';
+    }
+    else if (score >= 70 && score < 80) {
+      obstacle.style.left = (parseInt(window.getComputedStyle(obstacle).getPropertyValue("left")) - 35) + 'px';
+    }
+    else if (score >= 80) {
+      obstacle.style.left = (parseInt(window.getComputedStyle(obstacle).getPropertyValue("left")) - 40) + 'px';
     }
 
   }
