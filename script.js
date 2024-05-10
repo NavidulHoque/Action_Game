@@ -20,6 +20,7 @@ let animatetoggle = true //to stop the obstacle animation when the game is over
 
 const gameoversound = new Audio("gameover.mp3")
 const music = new Audio("music.mp3")
+const jump = new Audio("jump.mp3")
 music.play()
 
 //for dino movement
@@ -29,6 +30,7 @@ document.addEventListener("keydown", function (event) {
     "hidden"
   ) {
     if (event.key === "ArrowUp") {
+      jump.play()
       dino.classList.add("animatedino");
       setTimeout(() => {
         dino.classList.remove("animatedino");
